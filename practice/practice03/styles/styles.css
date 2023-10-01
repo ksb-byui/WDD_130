@@ -1,0 +1,9 @@
+.main-para {
+    color: red; /* Change the color to a noticeable one for testing */
+    font-size: 18px; /* Change the font size as desired */
+}
+
+#active {
+    background-color: white;
+    color: steelblue;
+}
