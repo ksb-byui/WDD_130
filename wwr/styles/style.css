@@ -1,4 +1,4 @@
-
+/* Home Styles */
 
 #content {
     max-width: 1600px;
@@ -274,5 +274,79 @@ nav {
     }
     footer {
         margin-top: 25px;
+    }
+}
+
+
+
+/* Testimonials Styles */
+
+#content-testimonials {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.testimonials-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials-section {
+    width: 80%;
+    text-align: center;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.testimonial {
+    background-color: #6f7364;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #515133;
+}
+
+.testimonials-section img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-style: italic;
+    color: goldenrod;
+    margin-top: 10px;
+}
+
+.button-box2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.book2 {
+    background-color: #797971;
+    color: black;
+    font-size: 25px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.book2:hover {
+    background-color: #503939;
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .testimonials-section {
+        grid-template-columns: 1fr;
     }
 }
