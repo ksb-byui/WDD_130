@@ -3,17 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kole S. Bauer - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333333;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav a {
+            color: #9e9e9e;
+            text-decoration: none;
+            padding: 50px 50px;
+            flex: 1;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #444444;
+            border-radius: 10px;
+            color: #0f0d0e;
+            text-decoration: underline;
+        }
+
+        #logo {
+            width: auto;
+            height: 180px;
+        }
+
+        section {
+            text-align: center;
+            padding: 50px 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #backg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        footer {
+            background-color: #333333;
+            color: #333333;
+            text-align: center;
+            padding: 40px;
+            margin-top: auto;
+            margin-bottom: -400px;
+        }
+
+        footer a {
+            color: #333333;
+            text-decoration: none;
+            margin-top: auto;
+        }
+
+        .inquiry-btn, .site-plan-btn, .linked-btn, .insta-btn, .gith-btn {
+            background-color: #1f0707;
+            color: #9e9e9e;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+
+        .inquiry-btn:hover, .site-plan-btn:hover, .linked-btn:hover, .insta-btn:hover, .gith-btn:hover {
+            background-color: #999999;
+            border-radius: 10px;
+            color: #0f0d0e;
+            text-decoration: underline;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Titillium Web', sans-serif;
+            font-weight: 700;
+        }
+
+        .p-container {
+            background-color: rgba(31, 7, 7, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            font-size: 24px;
+            color: #9e9e9e;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to WDD130 Web Projects</h1>
-    <nav>
-    <a href="aboutme/index.html">About Me Page</a>             
-    <a href="wwr/index.html">White Water Rafting Website</a>
-    <a href="wwr/site-plan-rafting.html">White Water Rafting Siteplan</a>
-    <a href="positioning.html">Positioning Activity</a>
-    <a href="#">Personal Website</a>
-    <a href="kbportfolio/site-plan.html">Personal Siteplan</a>
-    </nav>
+
+    <header>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="employers.html">FOR EMPLOYERS</a>
+            <img id="logo" src="images/Kole S Bauer.png" alt="My Logo">
+            <a href="projects.httml">PERSONAL PROJECTS</a>
+            <a href="shop.html">SHOP (COMING SOON)</a>
+        </nav>
+    </header>
+
+    <section>
+        <img src="images/PortHeadshot.png" alt="Kole Professional Headshot">
+        <img id="backg" src="images/portBack.png" alt="Home Background">
+        <div class="p-container">
+            <p>Hello! My name is Kole! I am a student at Brigham Young University Idaho, working 
+                toward a bachelor's degree in computer science with a minor in data science. I have 
+                a passion for mathematics and currently participate in the Data Science Society. My 
+                group is building an intuitive search AI for the Wilford Woodruff papers. I am 
+                learning and implementing skills in artificial intelligence, machine learning, and 
+                big data.</p>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/kole-bauer-925a1215a" target="_blank" class="linked-btn">LinkedIn</a>
+        <a href="https://github.com/ksb-byui" target="_blank" class="gith-btn">GitHub</a>
+        <a href="https://www.instagram.com/kole.boyy/" target="_blank" class="insta-btn">Instagram</a>
+        <a href="#" class="inquiry-btn">Inquiries</a>
+        <a href="https://ksb-byui.github.io/WDD_130/kbportfolio/site-plan.html" class="site-plan-btn">Site Plan</a>
+    </footer>
+
 </body>
 </html>
