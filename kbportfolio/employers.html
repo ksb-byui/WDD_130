@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kole S. Bauer - Portfolio</title>
+    <title>Kole S. Bauer - For Employers</title>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -69,6 +69,77 @@
             z-index: -1;
         }
 
+        .employers-content {
+            background-color: rgba(37, 7, 7, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            order: -1;
+        }
+
+        .employers-content p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            font-size: 24px;
+            color: #9e9e9e;
+            text-decoration: none;
+        }
+
+
+
+
+        .column-container {
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+
+        .column {
+            flex: 0 0 calc(33.33% - 20px);
+            background-color: rgba(37, 7, 7, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .column h3 {
+            font-size: 20px;
+            color: #9e9e9e;
+        }
+
+        .column p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            font-size: 16px;
+            color: #9e9e9e;
+        }
+
+        .download-link {
+            display: block;
+            margin-top: 10px;
+            background-color: #0f0d0e;
+            color: #9e9e9e;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+
+        .download-link:hover {
+            background-color: #999999;
+            border-radius: 10px;
+            color: #0f0d0e;
+            text-decoration: underline;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+
+
+
+
+
+
         footer {
             background-color: #333333;
             color: #333333;
@@ -106,33 +177,12 @@
             font-weight: 700;
         }
 
-        .p-container {
-            background-color: rgba(31, 7, 7, 0.9);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
+        h2 {
+            color: #9e9e9e ;
+            font-size: 28px;
         }
 
-        p {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            line-height: 1.6;
-            font-size: 24px;
-            color: #9e9e9e;
-            text-decoration: none;
-        }
-
-        #headshot-container {
-            background-color: #0f0d0e;
-            padding: 5px;
-            border-radius: 10px;
-            display: inline-block;
-        }
-
-        #headshot {
-            border-radius: 5px;
-            max-width: 100%;
-        }
+    
     </style>
 </head>
 <body>
@@ -148,19 +198,46 @@
     </header>
 
     <main>
-        <div id="headshot-container">
-            <img id="headshot" src="images/PortHeadshot.png" alt="Kole Professional Headshot">
+        <div class="employers-content">
+            <h2>For Employers</h2>
+            <p>If you are an employer interested in my skills and expertise, 
+                feel free to contact me. I am passionate about computer science 
+                and bring a strong foundation in mathematics and data science to 
+                the table. Let's discuss how I can contribute to your projects 
+                and goals. <br><br> Below you will find documents relative to my coursework, 
+                grades, and internships/employment. Please reach out if you'd like 
+                any other information. (Transcripts will be updated at the end of 
+                each semester.)</p>
         </div>
+    
+        <div class="column-container">
+            <div class="column">
+                <h3>Current BYU-I Transcript</h3>
+                <img src="images/cert stock.png" alt="Transcript Image">
+                <p>Most recent transcript from BYU-I <br> (Last Updated xx/xx/xxxx)</p>
+                <a href="#" class="download-link">Download</a>
+            </div>
+    
+            <div class="column">
+                <h3>Reference From (Insert Company Name)</h3>
+                <img src="images/cert stock.png" alt="Reference Image">
+                <p>Reference from my most recent employer <br> (Employer Name).</p>
+                <a href="#" class="download-link">Download</a>
+            </div>
+    
+            <div class="column">
+                <h3>Letters of Recommendation</h3>
+                <img src="images/cert stock.png" alt="Recommendation Image">
+                <p>Letters of recommendation from employers, professors, and teachers.</p>
+                <a href="#" class="download-link">Download</a>
+            </div>
+        </div>
+    
         <img id="backg" src="images/portBack.png" alt="Home Background">
-        <div class="p-container">
-            <p>Hello! My name is Kole! I am a student at Brigham Young University Idaho, working 
-                toward a bachelor's degree in computer science with a minor in data science. I have 
-                a passion for mathematics and currently participate in the Data Science Society. My 
-                group is building an intuitive search AI for the Wilford Woodruff papers. I am 
-                learning and implementing skills in artificial intelligence, machine learning, and 
-                big data.</p>
-        </div>
     </main>
+    
+    
+    
 
     <footer>
         <a href="https://www.linkedin.com/in/kole-bauer-925a1215a" target="_blank" class="linked-btn">LinkedIn</a>
