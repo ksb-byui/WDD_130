@@ -112,6 +112,87 @@
             max-width: 100%;
         }
 
+        .form-container {
+            background-color: rgba(31, 7, 7, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center; /* Center the heading within the container */
+        }
+
+        .form-container h2 {
+            color: #ffffff;
+            font-family: 'Titillium Web', sans-serif;
+            font-weight: 700;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .form-row {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-row.full-width {
+            grid-column: span 3;
+        }
+
+        #contact-form label {
+            color: #9e9e9e;
+            font-family: 'Titillium Web', sans-serif;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        #contact-form input,
+        #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            border: 1px solid #9e9e9e;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        #contact-form button {
+            background-color: #1f0707;
+            color: #9e9e9e;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #contact-form button:hover {
+            background-color: #999999;
+            border-radius: 10px;
+            color: #0f0d0e;
+            text-decoration: underline;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .contact-container h2 {
+            color: #9e9e9e;
+            font-family: 'Titillium Web', sans-serif;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 2px 2px rgba(31, 7, 7, 0.5);
+        }
+
+
         /* Typography */
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Titillium Web', sans-serif;
@@ -160,6 +241,32 @@
                 group is building an intuitive search AI for the Wilford Woodruff papers. I am 
                 learning and implementing skills in artificial intelligence, machine learning, and 
                 big data.</p>
+        </div>
+        <div class="contact-container" id="contact">
+            <div class="form-container">
+                <h2>Contact Me</h2>
+                <form action="https://formspree.io/f/mjvqqjny" method="post" id="contact-form">
+                    <div class="form-grid">
+                        <div class="form-row">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="company">Company (optional):</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-row full-width">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="inquiry-btn">Submit</button>
+                </form>
+            </div>
         </div>
     </main>
 
